@@ -1,68 +1,62 @@
 package com.Sacral.com.service;
 
-import java.util.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import com.Sacral.com.repository.SalesforceRepository;
+import org.springframework.stereotype.Service;
 
 @Service
 public class SalesforceService {
 
-    @Autowired
     private SalesforceRepository salesforceRepository;
 
-    public List<Salesforce> findAllByUserStories(){
-        return salesforceRepository.findAllByUserStories();
+    public SalesforceService(SalesforceRepository salesforceRepository) {
+        this.salesforceRepository = salesforceRepository;
     }
 
-    public void implementFolderStructure(){
-        salesforceRepository.implementFolderStructure();
+    public void implementFolderStructure() {
+        this.salesforceRepository.implementFolderStructure();
     }
 
-    public void implementMultiComponentSelection(){
-        salesforceRepository.implementMultiComponentSelection();
+    public void implementMultipleComponentSelection() {
+        this.salesforceRepository.implementMultipleComponentSelection();
     }
 
-    public void createCustomObjectsWithMetadata(){
-        salesforceRepository.createCustomObjectsWithMetadata();
+    public void createCustomObjects() {
+        this.salesforceRepository.createCustomObjects();
     }
 
-    public void createMultiComponentsInLWC(){
-        salesforceRepository.createMultiComponentsInLWC();
+    public void createComponentsInLWC() {
+        this.salesforceRepository.createComponentsInLWC();
     }
 
-    public void connectApexClassesAndLWC(){
-        salesforceRepository.connectApexClassesAndLWC();
+    public void connectivityBetweenApexClassesAndLWCComponents() {
+        this.salesforceRepository.connectivityBetweenApexClassesAndLWCComponents();
     }
 
-    public void unitTestImplementation(){
-        salesforceRepository.unitTestImplementation();
+    public void implementUnitTests() {
+        this.salesforceRepository.implementUnitTests();
     }
 
-    public void sandboxIntegration(){
-        salesforceRepository.sandboxIntegration();
+    public void integrateSandbox() {
+        this.salesforceRepository.integrateSandbox();
     }
 
-    public void sequenceUserStoriesExecution(){
-        salesforceRepository.sequenceUserStoriesExecution();
+    public void executeUserStories() {
+        this.salesforceRepository.executeUserStories();
     }
 
-    public void mergeNewFunctionalityInExistingComponents(){
-        salesforceRepository.mergeNewFunctionalityInExistingComponents();
+    public void mergeNewFunctionality() {
+        this.salesforceRepository.mergeNewFunctionality();
     }
 
-    public void deployGeneratedCode(){
-        salesforceRepository.deployGeneratedCode();
+    public void deployGeneratedCode() {
+        this.salesforceRepository.deployGeneratedCode();
     }
 
-    public void developAWSLambdaToContainerizedLambdaFunction(){
-        salesforceRepository.developAWSLambdaToContainerizedLambdaFunction();
+    public void awsLambdaContainerizedLambdaFunctionDevelopment() {
+        this.salesforceRepository.awsLambdaContainerizedLambdaFunctionDevelopment();
     }
 
-    public void provideApplicationAccessForPilotTesting(){
-        salesforceRepository.provideApplicationAccessForPilotTesting();
+    public void applicationAccessForPilotTesting() {
+        this.salesforceRepository.applicationAccessForPilotTesting();
     }
-
 }

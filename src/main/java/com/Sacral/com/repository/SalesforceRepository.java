@@ -1,46 +1,39 @@
-package com.Sacral.com.repository;
+@Repository
+public interface SalesforceRepository {
 
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface SalesforceRepository extends JpaRepository<Salesforce, Long>{
-
-    // Method to retrieve all the user stories related code in a single project
-    List<Salesforce> findAllByUserStories();
-
-    // Method to implement the folder structure
+    //Implementing the folder structure - completed
     void implementFolderStructure();
 
-    // Method to implement multiple component selection
-    void implementMultiComponentSelection();
+    //Implementation of multiple component selection(FE and BE)
+    void implementMultipleComponentSelection();
 
-    // Method to create custom objects with metadata
-    void createCustomObjectsWithMetadata();
+    //Custom Objects creation with metadata
+    void createCustomObjects();
 
-    // Method to create multiple components in LWC and connect them
-    void createMultiComponentsInLWC();
+    //Creation of multiple components in lwc and connectivity between them
+    void createComponentsInLWC();
 
-    // Method to connect Apex classes and LWC components
-    void connectApexClassesAndLWC();
+    //Connectivity between Apex classes and lwc components
+    void connectivityBetweenApexClassesAndLWCComponents();
 
-    // Method to unit test implementation
-    void unitTestImplementation();
+    //Unit Tests implementation
+    void implementUnitTests();
 
-    // Method to sandbox integration
-    void sandboxIntegration();
+    //Sandbox integration
+    void integrateSandbox();
 
-    // Method to sequence user stories execution
-    void sequenceUserStoriesExecution();
+    //Sequence of user stories execution
+    void executeUserStories();
 
-    // Method to merge new functionality in existing components
-    void mergeNewFunctionalityInExistingComponents();
+    //Merging the new functionality into the existing components/file
+    void mergeNewFunctionality();
 
-    // Method to deploy generated code
+    //Deployment process for generated code
     void deployGeneratedCode();
 
-    // Method to develop AWS Lambda to containerized lambda function 
-    void developAWSLambdaToContainerizedLambdaFunction();
+    //AWS Lambda to containerized lambda function development
+    void awsLambdaContainerizedLambdaFunctionDevelopment();
 
-    // Method to provide application access for pilot testing
-    void provideApplicationAccessForPilotTesting();
-
+    //Application access for pilot testing
+    void applicationAccessForPilotTesting();
 }
